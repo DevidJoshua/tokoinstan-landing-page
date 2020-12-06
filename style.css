@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: 'Poppins','sans-serif';
+}
+
+body {
+  margin: 0px;
+}
+
+.btn {
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.logo {
+  display: inline;
+  width: 100px;
+}
+
+nav {
+  z-index: 1000;
+  position: fixed;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 10%;
+  width: 100%;
+}
+
+nav .menu-right {
+  -webkit-transform: translate(0%, 50%);
+          transform: translate(0%, 50%);
+  display: table-cell;
+  vertical-align: middle;
+  float: right;
+  display: inline;
+  position: relative;
+}
+
+nav .menu-right ul {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav .menu-right ul li {
+  display: inline;
+  list-style: none;
+}
+
+nav .menu-right ul li a {
+  color: #444444;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0px 20px;
+  display: inline;
+}
+
+nav .menu-right ul li a:hover {
+  color: #4bae10;
+  cursor: pointer;
+}
+
+nav .menu-right .btn-nav {
+  margin: 0px 10px;
+  display: inline;
+  border-radius: 5vh;
+  font-size: 13pt;
+  color: white;
+  padding: 5px 40px;
+}
+
+nav .menu-right .login {
+  background-color: #444444;
+}
+
+nav .menu-right .signup {
+  background-color: #4bae10;
+}
+
+.container {
+  margin: 0px 10%;
+}
+
+.container .section-home {
+  padding-top: 200px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .section-home .intro {
+  margin-right: 50%;
+}
+
+.container .section-home .intro h1 {
+  line-height: 40pt;
+  font-size: 44.63px;
+}
+
+.container .section-home .intro button {
+  background-color: #54c80e;
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-weight: 700;
+  color: white;
+  font-size: 20pt;
+  border-radius: 5vh;
+}
+
+.container .section-home .bg-image {
+  z-index: 0;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  right: 0;
+  margin-right: 120px;
+}
+
+.container .section-pricing {
+  margin-top: 50px;
+  width: 100%;
+  height: 700px;
+  display: block;
+  position: relative;
+}
+
+.container .section-pricing .dot-kiri-atas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.container .section-pricing .dot-kanan-bawah {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container .section-pricing .pricing-content {
+  margin-top: 40px;
+  height: 900px;
+}
+
+.container .section-pricing .pricing-content .illus-1 {
+  margin-top: 60px;
+  margin-left: 10px;
+  float: left;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion {
+  float: right;
+  margin: auto;
+  margin-right: 100px;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion h3 {
+  color: #444444;
+  font-weight: 700;
+  font-size: 40pt;
+  margin: 0;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion .price {
+  color: #54c80e;
+  margin-top: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 70pt;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion .price h1 {
+  margin: 0;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion .price h2 {
+  margin: 0;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion .price h3 {
+  color: #54c80e;
+  line-height: 4.5;
+  margin: 0;
+}
+
+.container .section-pricing .pricing-content .pricing-promotion .btn-daftar {
+  background-color: #54c80e;
+  color: white;
+  border-radius: 20vh;
+  padding: 10px 30px;
+  font-size: 40px;
+}
+
+.container .section-register {
+  margin-top: 150px;
+  height: 700px;
+  display: block;
+}
+
+.container .section-register h1 {
+  text-align: center;
+  font-size: 40pt;
+  font-weight: 700;
+}
+
+.container .section-register .content {
+  display: inline-block;
+}
+
+.container .section-register .content ol {
+  list-style: none;
+  font-size: 25pt;
+}
+
+.container .section-register .content ol li {
+  text-indent: 20pt;
+  list-style-position: outside;
+  counter-increment: item;
+  margin-bottom: 20px;
+}
+
+.container .section-register .content ol li::before {
+  font-family: 'Arial';
+  font-size: 20pt;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: counter(item);
+  padding: 8px 15px;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  background-color: #54c80e;
+  color: white;
+  text-align: center;
+}
+
+.container .section-register .content button {
+  background-color: #54c80e;
+  color: white;
+  border-radius: 20vh;
+  padding: 10px 30px;
+  font-size: 40px;
+  margin-left: 70px;
+}
+
+.container .section-register .illus-2 {
+  position: absolute;
+}
+
+.container .section-about {
+  margin-top: 50px;
+  height: 700px;
+  display: block;
+}
+
+.container .section-about .content {
+  display: inline-block;
+}
+
+.container .section-about .content .caption {
+  float: left;
+  display: block;
+  margin-right: 40%;
+}
+
+.container .section-about .content .caption h1 {
+  margin: 0;
+  font-size: 50pt;
+  font-weight: 900;
+}
+
+.container .section-about .content .caption p {
+  font-size: 20pt;
+}
+
+.container .section-about .content .img-logo {
+  position: absolute;
+  margin-top: 150px;
+  right: 100px;
+  width: 550px;
+}
+
+footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 10%;
+  padding-top: 40px;
+  width: 100%;
+  height: 400px;
+  background: #4bae10;
+  display: block;
+}
+
+footer .footer-links {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+footer .footer-links .link {
+  font-size: 10pt;
+}
+
+footer .footer-links .link h3 {
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+footer .footer-links .link ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer-links .link ul li {
+  margin-bottom: 20px;
+}
+
+footer .footer-links .link ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links .link ul a:hover {
+  cursor: pointer;
+  color: #ffe100;
+}
+
+footer .footer-links .link ul p {
+  display: inline;
+}
+
+footer .footer-links .link ul p b {
+  color: #ffe100;
+}
+
+footer .footer-links .link ul span {
+  display: inline;
+}
+
+footer .footest {
+  display: inline;
+}
+
+footer .footest .foot-pull-left {
+  float: left;
+}
+
+footer .footest .foot-pull-left a {
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footest .foot-pull-left a:hover {
+  color: gainsboro;
+}
+
+footer .footest .foot-pull-right {
+  color: white;
+  float: right;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

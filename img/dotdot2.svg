@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93.16" height="44.22" viewBox="0 0 93.16 44.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1872.58" y1="2651" x2="1872.58" y2="2695.22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4e4e4e"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+  </defs>
+  <path id="Ellipse_2_copy_4" data-name="Ellipse 2 copy 4" class="cls-1" d="M1834.26,2651a8.29,8.29,0,1,1-8.26,8.29A8.277,8.277,0,0,1,1834.26,2651Zm24.52,0a8.29,8.29,0,1,1-8.26,8.29A8.277,8.277,0,0,1,1858.78,2651Zm-24.52,27.63a8.29,8.29,0,1,1-8.26,8.29A8.284,8.284,0,0,1,1834.26,2678.63Zm24.52,0a8.29,8.29,0,1,1-8.26,8.29A8.284,8.284,0,0,1,1858.78,2678.63Zm27.58-27.63a8.29,8.29,0,1,1-8.26,8.29A8.275,8.275,0,0,1,1886.36,2651Zm24.52,0a8.29,8.29,0,1,1-8.26,8.29A8.275,8.275,0,0,1,1910.88,2651Zm-24.52,27.63a8.29,8.29,0,1,1-8.26,8.29A8.282,8.282,0,0,1,1886.36,2678.63Zm24.52,0a8.29,8.29,0,1,1-8.26,8.29A8.282,8.282,0,0,1,1910.88,2678.63Z" transform="translate(-1826 -2651)"/>
+</svg>

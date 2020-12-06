@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$greenPrimary:#4bae10;
+$greemSecondary:#54c80e;
+$thirdColor:#444444;
+$fourthColor:white;
+$fifthColor:rgb(255, 225, 0);
+
+
+$font-regular:300;
+$font-medium:500;
+$font-bold:700;
+$font-xbold:900;
+
+*{
+    font-family: 'Poppins','sans-serif';
+}
+body{
+    margin: 0px;
+}
+.btn{
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 0px 0px 30px -3px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.logo{
+    display: inline;
+    width: 100px;
+}
+nav{
+    z-index: 1000;
+    position: fixed;
+    background-color: white;
+    // box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    box-sizing: border-box;
+    padding: 0px 10%;
+    width: 100%;
+    .menu-right{
+        transform: translate(0%,50%);
+        display: table-cell;
+        vertical-align: middle;
+        float: right;
+        display: inline;
+        position: relative;
+        ul{
+            display: inline;
+            margin-right: 15px;
+            li{
+                display: inline;
+                list-style: none;
+               a{
+                color:$thirdColor ;
+                text-decoration: none;
+                font-weight: $font-bold;
+                margin: 0px 20px;
+                display: inline;
+               }
+               a:hover{
+                 color: $greenPrimary;
+                 cursor: pointer;
+                 
+               }
+            }
+            
+        }
+
+        .btn-nav{
+            margin: 0px 10px;
+            display: inline;
+            border-radius: 5vh;
+            font-size: 13pt;
+            color: $fourthColor;
+            padding: 5px 40px;   
+        }
+        .login{
+            background-color: $thirdColor;
+        }
+        .signup{
+            background-color: $greenPrimary;
+        }
+    }
+}
+
+
+.container{
+    margin: 0px 10%;
+
+    .section-home{
+        padding-top: 200px;
+        height: 550px;
+        display: flex;
+        flex-direction: row;    
+        .intro{
+            margin-right: 50%;
+            h1{
+                line-height: 40pt;
+                font-size: 44.63px;
+            }
+            button{
+                background-color: $greemSecondary;
+                margin-top: 30px;
+                padding: 10px 30px;
+                font-weight: $font-bold;
+                color: $fourthColor;
+                font-size: 20pt;
+                border-radius: 5vh;
+            }
+        }
+        .bg-image{
+            z-index: 0;
+            position: absolute;
+            width: 600px;
+            height: auto;
+            right: 0;
+            margin-right: 120px;
+        }
+    }
+    // end section home
+    .section-pricing{
+        margin-top: 50px;
+        width: 100%;
+        height: 700px;
+        display: block;
+        position: relative;
+        .dot-kiri-atas{
+            position: absolute;
+            left: 0;
+            top: 0;  
+        }
+        .dot-kanan-bawah{
+            position: absolute;
+            right: 0;
+            bottom: 0;   
+        }
+       .pricing-content{
+           margin-top: 40px;
+           height: 900px;
+            .illus-1{
+                margin-top: 60px;
+                margin-left: 10px;
+                float: left;
+            }
+            .pricing-promotion{
+                float: right;
+                margin: auto;
+                margin-right: 100px;
+                h3{
+                    color: $thirdColor;
+                    font-weight: $font-bold;
+                    font-size: 40pt;
+                    margin: 0;
+                }
+                .price{
+                    color: $greemSecondary;
+                    margin-top: -30px;
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 70pt;
+                    h1{
+                        margin: 0;
+                    }
+                    h2{
+                        margin: 0;
+                    }
+                    h3{
+                        color: $greemSecondary;
+                        line-height: 4.5;
+                        margin: 0;
+                    }
+                    
+                }
+                .btn-daftar{
+                    background-color: $greemSecondary;
+                    color: $fourthColor;
+                    border-radius: 20vh;
+                    padding: 10px 30px;
+                    font-size:40px;
+                }
+            }
+       }
+    }
+    // end section pricing
+    
+    .section-register{
+        margin-top: 150px;
+        height: 700px; 
+        display: block;
+        h1{
+            text-align: center;
+            font-size: 40pt;
+            font-weight: $font-bold;
+        }
+        .content{
+            display: inline-block;
+            
+            ol{
+                list-style: none;
+                font-size: 25pt;
+                li{
+                    text-indent: 20pt;
+                    list-style-position: outside;
+                    counter-increment: item;
+                    margin-bottom: 20px;
+                }
+                li::before{
+                    font-family: 'Arial';
+                    font-size: 20pt;
+                    font-weight: bold;
+                    box-sizing: border-box;
+                    content: counter(item);
+                    padding: 8px 15px;
+                    border-radius: 100%;
+                    height: 30px;
+                    width: 30px;
+                    margin-right: 10px;
+                    background-color: $greemSecondary;
+                    color: $fourthColor;
+                    text-align: center;
+                }
+                
+            }
+            button{
+                background-color: $greemSecondary;
+                color: $fourthColor;
+                border-radius: 20vh;
+                padding: 10px 30px;
+                font-size:40px;
+                margin-left: 70px;
+            }   
+        }
+        .illus-2{
+            position: absolute;
+        }
+    }
+    // end section register
+
+    .section-about{
+        margin-top: 50px;
+        height: 700px; 
+        display: block;
+        .content{
+            display: inline-block;
+            .caption{
+                float: left;
+                display: block;
+                margin-right: 40%;
+               h1{
+                margin: 0;
+                font-size: 50pt;
+                font-weight: $font-xbold;
+               } 
+               p{
+                font-size: 20pt;
+               }
+            }
+            .img-logo{
+                position: absolute;
+                margin-top: 150px;
+                right: 100px;
+                width: 550px;
+                
+            }
+        }
+
+    }
+}
+footer{
+    box-sizing: border-box;
+    padding: 10px 10%;
+    padding-top: 40px;
+    width: 100%;
+    height: 400px;
+    background: $greenPrimary;
+    display: block;
+    .footer-links{
+        color: $fourthColor;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .link{
+            
+            font-size: 10pt;
+            h3{
+                text-transform: uppercase;
+                margin: 0px;
+            }
+            ul{
+                padding: 0;
+                list-style: none;
+                li{
+                    margin-bottom: 20px;
+                }
+                a{
+                    color: $fourthColor;
+                    text-decoration: none;
+                }
+                a:hover{
+                    cursor: pointer;
+                    color: $fifthColor;
+                }
+                p{
+                    display: inline;
+                    b{
+                        color: $fifthColor;
+                    }
+                }
+                span{
+                    display: inline;
+                    
+                }
+            }
+        }
+    }
+    .footest{
+        display: inline;
+        
+        .foot-pull-left{
+            float: left;
+            a{
+                margin-right: 10px;
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color:gainsboro;
+            }
+        }
+        .foot-pull-right{
+            color: $fourthColor;
+            float: right;
+            right: 0;
+        }
+    }
+    
+}
+
